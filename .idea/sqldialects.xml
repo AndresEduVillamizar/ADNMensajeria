@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/infraestructura/src/main/resources/sql/usuario/crear.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/infraestructura/src/main/resources/sql/usuario/crearEnvio.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/infraestructura/src/main/resources/sql/usuario/listarEnvio.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/infraestructura/src/test/resources/db/migration/DML/V1.1__data.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/infraestructura/src/test/resources/db/migration/DML/V1.2__data.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/src/main/resources/db/migration/DDL/V1.0__schema.sql" dialect="H2" />
+    <file url="file://$PROJECT_DIR$/java-arquitectura-hexagonal/microservicio/src/main/resources/db/migration/DDL/V2.0__schema.sql" dialect="H2" />
+  </component>
+</project>

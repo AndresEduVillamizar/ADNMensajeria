@@ -1,0 +1,1 @@
+insert into envio (nombre, clave,premium) values (:nombre, :clave, :premium)

@@ -1,0 +1,21 @@
+
+z	java:S116
+"eRename this field "NO_SUPERA_DISTANCIA_MINIMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»î°
+w	java:S116"bRename this field "SUPERA_DISTANCIA_MAXIMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”•ÓÎ
+z	java:S116"`Rename this field "SE_REQUIERE_DISTANCIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜Ü»ïøÿÿÿÿ
+{	java:S116"aRename this field "SE_REQUIERE_ID_USUARIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å»ÓÏÿÿÿÿÿ
+p	java:S116"[Rename this field "DISTANCIA_MINIMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤™¡“
+u	java:S116"[Rename this field "DISTANCIA_MAXIMA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜–Ùüÿÿÿÿ
+7
+java:S1170
+"!Make this final field static too.(»î°
+7
+java:S1170"!Make this final field static too.(”•ÓÎ
+<
+java:S1170"!Make this final field static too.(˜Ü»ïøÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(å»ÓÏÿÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(¤™¡“
+<
+java:S1170"!Make this final field static too.(˜–Ùüÿÿÿÿ
