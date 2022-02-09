@@ -41,8 +41,8 @@ pipeline{
 
 		stage('Static Code Analysis') {
 			steps{
-				sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:proyectoadn.floristeria-alejandra.gallego',
-				sonarName:'CeibaADN-ProyectoADNFloristeria-alejandra.gallego',
+				sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:adnmensajeria.envio-eduardo.villamizar',
+				sonarName:'CeibaADN-ADNMensajeria(eduardo.villamizar)',
 				sonarPathProperties:'./sonar-project.properties')
 			}
 		}
@@ -61,7 +61,7 @@ pipeline{
         failure {
             echo 'This will run only if failed'
             mail(
-                to: 'alejandra.gallego@ceiba.com.co',
+                to: 'eduardo.villamizar@ceiba.com.co',
                 body:"Something is wrong with ${env.BUILD_URL}",
                 subject: "Failed Pipeline:${currentBuild.fullDisplayName}"
             )
