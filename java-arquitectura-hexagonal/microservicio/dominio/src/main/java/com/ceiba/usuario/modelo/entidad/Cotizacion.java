@@ -15,17 +15,17 @@ public class Cotizacion {
     private final float DISTANCIA_MINIMA = 5;
     private final float DISTANCIA_MAXIMA = 40;
 
-    private Long id;
+    private Long idUsuario;
     private float distanciaRecorrido;
 
-    public Cotizacion(Long id, float distanciaRecorrido) {
+    public Cotizacion(Long idUsuario, float distanciaRecorrido) {
 
-        validarDatoIdUsuario(id,SE_REQUIERE_ID_USUARIO);
+        validarDatoIdUsuario(idUsuario,SE_REQUIERE_ID_USUARIO);
         validarObligatorioDistancia(distanciaRecorrido, SE_REQUIERE_DISTANCIA);
         validarDistanciaMinima(distanciaRecorrido, DISTANCIA_MINIMA, NO_SUPERA_DISTANCIA_MINIMA);
         validarDistanciaMaxima(distanciaRecorrido, DISTANCIA_MAXIMA, SUPERA_DISTANCIA_MAXIMA);
 
-        this.id = id;
+        this.idUsuario = idUsuario;
         this.distanciaRecorrido=distanciaRecorrido;
     }
 }

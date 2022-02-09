@@ -10,8 +10,8 @@ public class ComandoEnvioTestDataBuilder {
     private boolean premium;
 
     public ComandoEnvioTestDataBuilder(){
-        nombre="";
-        clave="";
+        nombre="test";
+        clave="1234";
         premium = true;
     }
 

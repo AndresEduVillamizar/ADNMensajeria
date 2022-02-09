@@ -1,7 +1,8 @@
 package com.ceiba.usuario.controlador;
 
 import com.ceiba.ApplicationMock;
-import com.ceiba.usuario.adaptador.controlador.ConsultaControladorUsuario;
+import com.ceiba.controlador.ConsultaControladorEnvio;
+import com.ceiba.controlador.ConsultaControladorUsuario;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(ConsultaControladorUsuario.class)
+@WebMvcTest(ConsultaControladorEnvio.class)
 @ContextConfiguration(classes= ApplicationMock.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class ConsultaControladorUsuarioEnvioTest {
@@ -34,6 +35,7 @@ public class ConsultaControladorUsuarioEnvioTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$", hasSize(1)))
                 .andExpect(jsonPath("$[0].nombre", is("test")))
-                .andExpect(jsonPath("$[0].id", is(1)));
+                .andExpect(jsonPath("$[0].id", is(1)))
+                .andExpect(jsonPath("$[0].premium",is(true)));
     }
 }

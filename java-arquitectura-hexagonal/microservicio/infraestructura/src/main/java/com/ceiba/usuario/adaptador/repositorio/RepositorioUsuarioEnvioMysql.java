@@ -12,13 +12,13 @@ public class RepositorioUsuarioEnvioMysql implements RepositorioUsuarioEnvio {
 
     private final CustomNamedParameterJdbcTemplate customNamedParameterJdbcTemplate;
 
-    @SqlStatement(namespace="usuario", value="crearEnvio")
+    @SqlStatement(namespace="envio", value="crearEnvio")
     private static String sqlCrear;
 
-    @SqlStatement(namespace="usuario", value="existeEnvio")
+    @SqlStatement(namespace="envio", value="existeEnvio")
     private static String sqlExiste;
 
-    @SqlStatement(namespace="usuario", value="eliminarEnvio")
+    @SqlStatement(namespace="envio", value="eliminarEnvio")
     private static String sqlEliminar;
 
     public RepositorioUsuarioEnvioMysql(CustomNamedParameterJdbcTemplate customNamedParameterJdbcTemplate){

@@ -13,7 +13,7 @@ public class DaoUsuariosEnvioMysql implements DaoUsuariosEnvios {
 
     private final CustomNamedParameterJdbcTemplate customNamedParameterJdbcTemplate;
 
-    @SqlStatement(namespace="usuario", value="listarEnvio")
+    @SqlStatement(namespace="envio", value="listarEnvio")
     private static String sqlListar;
 
     public DaoUsuariosEnvioMysql(CustomNamedParameterJdbcTemplate customNamedParameterJdbcTemplate) {

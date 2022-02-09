@@ -1,7 +1,7 @@
 package com.ceiba.usuario.controlador;
 
 import com.ceiba.ApplicationMock;
-import com.ceiba.usuario.adaptador.controlador.ComandoControladorUsuario;
+import com.ceiba.controlador.ComandoControladorUsuario;
 import com.ceiba.usuario.comando.ComandoUsuario;
 import com.ceiba.usuario.servicio.testdatabuilder.ComandoUsuarioTestDataBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;

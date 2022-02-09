@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ComandoCotizacion {
 
-    private Long id;
+    private Long idUsuario;
     private float distanciaRecorrido;
 
 }

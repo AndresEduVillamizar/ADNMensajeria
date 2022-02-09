@@ -16,13 +16,13 @@ public class RepositorioCotizacionMysql implements RepositorioCotizacion {
         this.customNamedParameterJdbcTemplate = customNamedParameterJdbcTemplate;
     }
 
-    @SqlStatement(namespace="usuario", value="listarPremium")
+    @SqlStatement(namespace="envio", value="listarPremium")
     private static String sqlListarPremium;
 
     @Override
     public Boolean isPremium(Cotizacion cotizacion) {
         MapSqlParameterSource paramSource = new MapSqlParameterSource();
-        paramSource.addValue("id", cotizacion.getId());
+        paramSource.addValue("id", cotizacion.getIdUsuario());
 
         return this.customNamedParameterJdbcTemplate.getNamedParameterJdbcTemplate().queryForObject(sqlListarPremium,paramSource, Boolean.class);
     }

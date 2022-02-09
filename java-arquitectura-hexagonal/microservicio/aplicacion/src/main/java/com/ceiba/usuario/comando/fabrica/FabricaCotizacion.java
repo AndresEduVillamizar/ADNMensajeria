@@ -9,7 +9,7 @@ public class FabricaCotizacion {
 
     public Cotizacion crear(ComandoCotizacion comandoCotizacion){
         return new Cotizacion(
-                comandoCotizacion.getId(),
+                comandoCotizacion.getIdUsuario(),
                 comandoCotizacion.getDistanciaRecorrido()
         );
     }
